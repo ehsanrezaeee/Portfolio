@@ -1,0 +1,36 @@
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
+import ExperienceCard from "./ExperienceCard";
+
+type Props = {};
+
+function WorkExperience({}: Props) {
+  return (
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      className="flex flex-col h-screen relative text-center md:text-left overflow-hidden
+    md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+    >
+      <h3 className="absolute top-16 uppercase text-gray-500 text-xl">
+        تجربه‌ها
+      </h3>
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory ">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+      </div>
+    </motion.div>
+  );
+}
+
+export default WorkExperience;
