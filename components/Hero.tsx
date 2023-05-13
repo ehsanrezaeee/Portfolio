@@ -50,15 +50,25 @@ export default function Hero({}: Props) {
           <button
             className="heroButton"
             onClick={() => {
-              const aboutSection = document.getElementById("experience");
-              if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: "smooth" });
+              const experienceSection = document.getElementById("experience");
+              if (experienceSection) {
+                experienceSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
           >
             تجربه‌ها
           </button>
-          <button className="heroButton">مهارت‌ها</button>
+          <button
+            className="heroButton"
+            onClick={() => {
+              const skillSection = document.getElementById("skills");
+              if (skillSection) {
+                skillSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            مهارت‌ها
+          </button>
           <button className="heroButton">پروژه‌ها</button>
         </div>
       </div>

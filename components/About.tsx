@@ -20,7 +20,7 @@ function About({}: Props) {
       className="flex flex-col h-screen relative text-center md:text-left 
     md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-16 uppercase text-gray-500 text-xl">
+      <h3 className="absolute top-16 uppercase text-gray-500 text-2xl">
         درباره من
       </h3>
       <motion.img

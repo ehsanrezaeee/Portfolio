@@ -21,7 +21,7 @@ function WorkExperience({}: Props) {
       className="flex flex-col h-screen relative text-center md:text-left overflow-hidden
     md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-16 uppercase text-gray-500 text-xl">
+      <h3 className="absolute top-16 uppercase text-gray-500 text-2xl">
         تجربه‌ها
       </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory ">
