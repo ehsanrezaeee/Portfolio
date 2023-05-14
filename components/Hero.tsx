@@ -69,7 +69,17 @@ export default function Hero({}: Props) {
           >
             مهارت‌ها
           </button>
-          <button className="heroButton">پروژه‌ها</button>
+          <button
+            className="heroButton"
+            onClick={() => {
+              const projectSection = document.getElementById("projects");
+              if (projectSection) {
+                projectSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            پروژه‌ها
+          </button>
         </div>
       </div>
     </div>

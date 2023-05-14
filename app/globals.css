@@ -7,4 +7,8 @@
     @apply px-3 py-2 rounded-full uppercase text-xs tracking-widest
     text-gray-500 transition-all hover:border hover:border-[#D25380] hover:text-[#F7AB0A]/40;
   }
+  .contact-info {
+    @apply outline-none border-b rounded-sm bg-slate-400/10 px-6 py-4 border-[#242424]
+    text-gray-500 placeholder-gray-500 transition-all focus:text-[#F7AB0A]/40 focus:border-[#F7AB0A]/40;
+  }
 }
